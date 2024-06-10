@@ -22,23 +22,3 @@ El ratón se moverá hacia la derecha y presionará la tecla space cada 10 segun
 pip install pyautogui keyboard threading
 
 
-Uso
-Clona este repositorio o copia el código en un archivo, por ejemplo, anti_afk.py.
-
-Ejecuta el script:
-
-sh
-Copy code
-python anti_afk.py
-Una vez que el script esté corriendo, verás las siguientes instrucciones en la consola:
-
-Presiona q para detener el programa.
-Presiona p para pausar o reanudar el movimiento del ratón.
-Cómo funciona
-El script realiza los siguientes pasos:
-
-Imprime mensajes de bienvenida e instrucciones en la consola.
-Configura los eventos necesarios para detener (stop_event) y pausar/reanudar (pause_event) el programa.
-Inicia un hilo (mover_mouse) que mueve el ratón cada 10 segundos entre dos posiciones.
-Inicia un segundo hilo (esperar_tecla) que espera a que se presionen las teclas q o p para detener o pausar/reanudar el programa, respectivamente.
-El ratón se moverá hacia la derecha y presionará la tecla space cada 10 segundos, luego se moverá hacia la izquierda en el siguiente ciclo. Este movimiento continuo asegura que tu computadora no entre en estado de inactividad.
